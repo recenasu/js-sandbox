@@ -14,6 +14,9 @@ var areSeasSafe = false;
 var tooManyPirates = true;
 var numPiratesTotal = numPiratesArctic + numPiratesAtlantic + numPiratesCarribean + numPiratesIndian + numPiratesPacific;
 var maxNumPirates = 20;
+var pirateChest = ["pieces of eight", "dagger", "pistol", "rum", "cutlass", "spyglass", "sextant"];
+var maxChestItems = 16;
+var shotTypes = ["solid shot", "chain shot", "grape shot"]
 
 pirate2Name = "Dominique You";
 
@@ -50,3 +53,23 @@ if (areSeasSafe) {
     console.log("Shiver me timbers!");
 }
 
+console.log(pirateChest.length);
+console.log(pirateChest[3]);
+console.log("Be sure to take yer " + pirateChest[5] + " with ye!");
+pirateChest[2] = "cannon";
+console.log(pirateChest[2]);
+console.log(pirateChest);
+
+if (pirateChest.length < maxChestItems) {
+    console.log("Ye can hold more cargo, matey!");
+} else {
+    console.log("She be running low in the water!");
+}
+
+for (i = 0; i < pirateChest.length; i++) {
+    console.log("There be " + pirateChest[i] + " in a dead man's chest...");
+}
+
+for (i = 0; i < shotTypes.length; i++) {
+    console.log("We be needin' " + shotTypes[i] + ", matey!");
+}
