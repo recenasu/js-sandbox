@@ -103,3 +103,25 @@ console.log(pirateKnapsack);
 
 var pirate6Name = pirate2Name.replace("You", "Pierre");
 console.log(pirate6Name);
+console.log(pirate2Name);
+
+var myWeapon = pirateChest.shift();
+console.log(pirateChest);
+console.log(myWeapon);
+
+var mySecondWeapon = pirateChest.pop();
+console.log(pirateChest);
+console.log(mySecondWeapon);
+
+pirateChest.concat(mySecondWeapon);
+console.log(pirateChest);
+console.log(mySecondWeapon);
+
+var allPirateEquip = pirateChest.concat(mySecondWeapon);
+console.log(allPirateEquip);
+
+var upMySecondWeapon = mySecondWeapon.toUpperCase();
+console.log(upMySecondWeapon);
+
+
+
