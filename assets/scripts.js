@@ -73,3 +73,33 @@ for (i = 0; i < pirateChest.length; i++) {
 for (i = 0; i < shotTypes.length; i++) {
     console.log("We be needin' " + shotTypes[i] + ", matey!");
 }
+
+function pirateEquip() {
+    console.log(pirate2Name + " has " + pirateChest[1]);
+    console.log("---------------------------");
+    return;
+}
+
+pirateEquip();
+
+function sailsSet(x, y, z) {
+    var pirate5Name = "Roberts";
+    console.log(x + ", " + y + ", and " + z + " are set, matey!");
+    console.log(pirate5Name);
+    console.log("--------------------------");
+    return;
+}
+
+sailsSet("Topsails", "Mainsails", "Courses");
+
+pirateChest.sort();
+console.log(pirateChest);
+
+pirateChest.push("pistol", "rapier");
+console.log(pirateChest);
+
+var pirateKnapsack = pirateChest.slice(6);
+console.log(pirateKnapsack);
+
+var pirate6Name = pirate2Name.replace("You", "Pierre");
+console.log(pirate6Name);
