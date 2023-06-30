@@ -123,5 +123,48 @@ console.log(allPirateEquip);
 var upMySecondWeapon = mySecondWeapon.toUpperCase();
 console.log(upMySecondWeapon);
 
+var pirate = {
+    name: "Jean Lafitte",
+    sailing: 3,
+    diplomacy: 5,
+    charm: 5,
+    shipCombat: 3,
+    meleeCombat: 3,
+    pirateEquipment: [pirateChest[0], pirateChest[4]],
+    preferredWeapon: "cutlass",
+    preferredShip: "Frigate",
+    currentShip: "Frigate",
+    tagLine: function () {
+        console.log("It is, it is a wonderful thing to be the pirate king!")
+    },
+    refuseLine: function () {
+        console.log("Um...I've got to be going now.")
+    }
+}
 
+console.log(pirate);
+console.log(pirate.sailing);
+console.log(pirate.preferredShip);
+console.log(pirate.meleeCombat);
+console.log(pirate.diplomacy);
+console.log(pirate.name);
+console.log(pirate.pirateEquipment);
 
+function checkShip() {
+    if (pirate.preferredShip === pirate.currentShip) {
+        console.log("Set Sail! " + pirate.currentShip + "s are awesome!!");
+    } else {
+        console.log("Stay in port! I don't know how to sail " + pirate.currentShip + "s!!");
+    }
+}
+
+function checkWeapon() {
+    if (pirate.pirateEquipment.includes(pirate.preferredWeapon)) {
+        pirate.tagLine();
+    } else {
+        pirate.refuseLine()
+    }
+}
+
+checkShip();
+checkWeapon();
